@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Home{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/23fdf0a18e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body fixed-top" >
+        <div class="container">
+          <a class="navbar-brand" href="/"><img src="../static/kanak-decoration-life-logo.png" alt="logo" style="height: 75px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="events">Events</a>
+              <a class="nav-link active" aria-current="page" href="about">About</a>   
+            </div>
+          </div>
+        </div>
+      </nav>
+      {% block content %}
+      <div style="margin-top: 110px;">
+      <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" style="margin-top: 75px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000" >
+            <img src="../static/carousel-1.jpg" class="d-block w-100 " alt="..." style="height: auto;">
+            <div class="carousel-caption d-md-block"><br><br><br> <h3>Kanak Events</h3> <br><h1>"For Life Long Memories."</h1> <br></div>
+          </div>
+          <div class="carousel-item " data-bs-interval="5000" >
+            <img src="../static/carousel-2.jpg" class="d-block w-100 " alt="..." style="height: auto;">
+          </div>
+          <div class="carousel-item " data-bs-interval="5000" >
+            <img src="../static/carousel-3.jpg" class="d-block w-100 " alt="..." style="height: auto;">
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div></div> </div><br><br> <br> 
+      <div style="display: flex; flex-wrap: wrap; justify-content: center;" class="container">
+      <div class="card shadow-lg" style="width: 18rem; margin-right: 20px; margin-bottom: 20px; ">
+        <img src="../static/Bday card img.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Kids theme decore.</h5>
+          <p class="card-text">Beautiful themes for your kids birthday party.</p>
+          <a href="birthday" class="btn btn-primary">View more...</a>
+        </div>
+      </div>
+      <div class="card shadow-lg" style="width: 18rem; margin-right: 20px; margin-bottom: 20px;">
+        <img src="../static/gate card img.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Entry Gates.</h5>
+          <p class="card-text">Beautiful entry gates and welcome board decore.</p>
+          <a href="gate" class="btn btn-primary">View more...</a>
+        </div>
+      </div>
+      <div class="card shadow-lg" style="width: 18rem; margin-right: 20px; margin-bottom: 20px;">
+        <img src="../static/baby shower card img.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Baby Showers.</h5>
+          <p class="card-text">Amazing Oh Baby and Welcome Baby decore.</p>
+          <a href="babyshower" class="btn btn-primary">View more...</a>
+        </div>
+      </div>
+      <div class="card shadow-lg" style="width: 18rem; margin-right: 20px; margin-bottom: 20px;">
+        <img src="../static/canopy card img.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Cabana setup.</h5>
+          <p class="card-text">Cabana or Canopy themes decore.</p>
+          <a href="canopy" class="btn btn-primary">View more...</a>
+        </div>
+      </div>
+      <div class="card shadow-lg" style="width: 18rem; margin-right: 20px; margin-bottom: 20px;">
+        <img src="../static/festivals card img.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Festivals</h5>
+          <p class="card-text">Amazing Festival based decore.</p>
+          <a href="festivals" class="btn btn-primary">View more...</a>
+        </div>
+      </div>
+     </div> {% endblock %}
+     <div class="container-fluid bg-info-subtle" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+          <div>
+            <h3>Contact Us here :</h3>
+            <i class="fa-solid fa-phone"></i>  : +919368484824 <br>
+            <i class="fa-solid fa-envelope"></i> : kanakdecorationlife@gmail.com <br>
+            <a href="https://www.instagram.com/noida_birthday_decoration/" style="text-decoration: none; color: black;" target="_blank"><i class="fa-brands fa-square-instagram"></i> : noida_birthday_decoration</a><br>
+            <i class="fa-solid fa-house"></i> : Shiv Mandir, Barola Sector-49, Noida.(PIN: 201307)
+          </div>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.1203698679014!2d77.367266275423!3d28.56614797570096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5f2fa697fad%3A0x26e338c34c82ba35!2sShiv%20Mandir%20Barola%20Sec%2049!5e0!3m2!1sen!2sin!4v1691725209875!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-fluid"></iframe>
+          </div> 
+     </div> 
+     <div class="container-fluid bg-info-subtle" style="text-align: center;">
+     <h5>This Website is Designed by:</h5>
+     <a href="https://www.instagram.com/_the.nikhil.b_/" style="text-decoration: none; color: black;" target="_blank"><i class="fa-brands fa-square-instagram"></i> : Nikhilesh</a><br>
+     <i class="fa-solid fa-envelope"></i> : bvsnikhilesh21@gmail.com <br>
+     </div>
+     <a href="https://wa.me/919368484824" target="_blank" style="position:fixed;width:60px;height:60px;bottom:120px;right:20px; background-color: orchid; text-align: center; box-shadow: 2px 2px 3px; border-radius: 20px;"><i class="fa-brands fa-2x fa-whatsapp" style="margin-top: 12px;"></i></a>
+     <a href="tel:919368484824" style="position:fixed;width:60px;height:60px;bottom:40px;right:20px; background-color: orchid; text-align: center; box-shadow: 2px 2px 3px; border-radius: 20px;"><i class="fa-solid fa-2x fa-phone" style="margin-top: 12px;"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
